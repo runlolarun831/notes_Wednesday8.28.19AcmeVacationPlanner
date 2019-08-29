@@ -1,0 +1,23 @@
+<!-- moment library has a diff method don't have to use New-->
+<html>
+  <head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js'></script>
+    <script>
+      /*
+      const now = new Date();
+      const halloween = new Date('10/31/2019');
+      const oneDay = 1000*60*60*24;// 1000msec/sec 60sec/min 60min/hr 24hr/day
+      const diff = halloween - now;
+      console.log(diff);
+      */
+     const now = moment();
+     const halloween = moment('10/31/2019');
+     //const diff = halloween.diff(now, 'days');
+     const diff = halloween.diff(now, 'hours');
+     console.log(diff);
+     console.log(halloween.toDate());
+
+
+    </script>
+  </head>
+</html>

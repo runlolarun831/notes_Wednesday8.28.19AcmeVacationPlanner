@@ -1,0 +1,24 @@
+<!-- moment library allows you to parse dates with different formatiing-->
+<html>
+  <head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js'></script>
+    <script>
+      /*
+      const now = new Date();
+      const halloween = new Date('10/31/2019');
+      const oneDay = 1000*60*60*24;// 1000msec/sec 60sec/min 60min/hr 24hr/day
+      const diff = halloween - now;
+      console.log(diff);
+      */
+     const halloween = moment('31-10-19', 'DD-MM-YY');
+     console.log(halloween.format('dddd MM-DD-YYYY'));//Thursday 10-31-2019
+     console.log(halloween.format('dddd MMM-DD-YYYY'));//Thursday Oct-31-2019
+     console.log(halloween.format('dddd MMMM-DD-YYYY'));//Thursday October-31-2019
+
+     console.log(halloween.format('d'));//4
+     console.log(halloween.format('dd'));//Th
+     console.log(halloween.format('ddd'));//Thu
+     console.log(halloween.format('dddd'));//Thursday
+    </script>
+  </head>
+</html>

@@ -1,0 +1,18 @@
+The Moment.js Library
+You can include the Moment.js library using a CDN:
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+You create an instance of Moment by passing in any kind of valid date:
+
+const example1 = moment(new Date());
+const example2 = moment('12-25-1999');
+Here are some ways to format times or dates using Moment (taken from https://momentjs.com):
+
+moment().format('MMMM Do YYYY, h:mm:ss a'); // August 24th 2019, 11:04:34 am
+moment().format('dddd');                    // Saturday
+moment().format("MMM Do YY");               // Aug 24th 19
+moment().format('YYYY [escaped] YYYY');     // 2019 escaped 2019
+moment().format();                          // 2019-08-24T11:04:34-07:00
+If you have already defined a Moment instance, you format it using the instance:
+
+const formattedDate = example1.format('MMMM Do YYYY, h:mm:ss a');
